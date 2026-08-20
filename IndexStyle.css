@@ -28,8 +28,8 @@ header.visible {
     font-size : 3.5vw ;
     margin-left:30%;
     margin-right:30%;
-    margin-top : 15vh;
-    margin-bottom : 15vh;
+    margin-top : 12vh;
+    margin-bottom : 12vh;
 }
 
 .activite {
@@ -100,10 +100,9 @@ header.visible {
 }
 
 #myVideo {
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
 }
 
 .Instagram {
