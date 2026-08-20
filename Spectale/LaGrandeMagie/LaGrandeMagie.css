@@ -1,0 +1,35 @@
+.Introduction {
+    color : white;
+}
+
+.IntroductionTexte div h1 {
+    font-size : 3.2em;
+    background-color: rgba(220, 61, 93)
+}
+
+.IntroductionTexte div h2 {
+    font-size : 2em;
+}
+
+.IntroductionTexte p {
+    font-size: 1.75em;
+}
+
+.Actor h2, .Video h2, .Photo h2{
+    color : white;
+    background-color:rgba(220, 61, 93)
+}
+
+.flip-card-back {
+    background-color: rgb(220, 61, 93);
+}
+
+.Color1{
+    background-color: rgb(226, 221, 181);
+    fill:rgb(226, 221, 181);
+}
+
+.Color2 {
+    background-color: rgb(167, 29, 80);
+    fill:rgb(167, 29, 80);
+}

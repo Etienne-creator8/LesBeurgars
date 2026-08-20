@@ -1,0 +1,109 @@
+body{
+    overflow: visible;
+}
+
+.Introduction {
+    padding-top:2.5%;
+    display : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    width : 80vw;
+    margin: auto;
+}
+
+.IntroductionTexte{
+    width: 70%;
+    display : flex;
+    flex-direction : column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.IntroductionTexte div h1 {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.IntroductionTexte div h2 {
+    text-align: center;
+}
+
+.IntroductionTexte p {
+    text-align : center;
+    margin-bottom: 3vh;
+}
+
+.Affiche{
+    display : block;
+    align-self: center ;
+    overflow: visible;
+    aspect-ratio: 5/7;
+    width: 17vw;
+    height:100%;
+    transition: transform 0.5s ease-out 0s;
+}
+
+.Left {
+    order:1;
+}
+
+.Right {
+    order:2;
+}
+
+.Affiche.Right:hover{
+    transform: rotate(5deg)
+}
+
+.Affiche.Left:hover{
+    transform: rotate(-5deg)
+}
+
+.BookBottom {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.BookBottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 130px;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+.flip-card,.flip-card-image{
+    width: 10vw;
+}
+
+.flip-card-back h1{
+    font-size: 2em;
+}
+
+.Actor h2, .Video h2, .Photo h2{
+    text-align: center;
+    font-size : 2.5em ;
+    margin-left:30%;
+    margin-right:30%;
+    margin-bottom : 1%;
+}
+
+.Actor{
+    width : 85vw;
+    margin : auto
+}
+
+section{
+    padding-bottom: 2.5vh;
+    padding-top: 2.5vh;
+}

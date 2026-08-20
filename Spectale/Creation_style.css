@@ -1,0 +1,390 @@
+*{
+    overflow-x: hidden ! important;
+}
+
+.introduction{
+    margin-bottom:2.5%;
+}
+
+.introduction h1 {
+    text-align: center;
+    color : white;
+    background-color: rgb(194, 7, 7);
+    font-size : 4em ;
+    margin-left:30%;
+    margin-right:30%;
+    margin-top : 5%;
+}
+
+.creation {
+    padding-top:2.5%;
+    padding-bottom:2.5%;
+    display : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    cursor: pointer;
+    width : 100%;
+    height : 60vh;
+    margin: auto;
+}
+
+.ShowInfo{
+    display : block;
+    padding: 0%;
+    margin-top: 1%;
+    background-color: rgb(0, 255, 115);
+    width: 21vw;
+    height: 95%;
+    z-index: 5;
+    transition: transform 0.5s ease-out 0s;
+}
+
+.ShowInfo img{
+    display : block;
+    align-self: center ;
+    aspect-ratio: 5/7;
+    width: 100%;
+    height:100%
+}
+
+.ShowImage{
+    width:65vw ;
+}
+
+.Left {
+    order:1;
+}
+
+.Right {
+    order:2;
+}
+
+.ShowInfo.Right{
+    margin-right : 6vw;
+}
+
+.ShowInfo.Left{
+    margin-left : 6vw;
+}
+
+.BackgroundImage{
+    background-image: url(AgeOr/PresentationImage/Background.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter : blur(0.5rem);
+}
+
+#AgeOr{
+    background-image: url(AgeOr/PresentationImage/Background.png);
+    background: blur(0.5rem);
+}
+
+.AgeOr{
+    overflow: hidden;
+    display : grid;
+    grid-template-columns: 4fr;
+    grid-row: 1fr;
+    place-items: center;
+}
+
+.AgeOr img{
+    width: auto;
+    height: 100%;
+    position : relative;
+    transition: left 0.5s ease-out 0s;
+}
+
+#AnnaHorloge{
+    left : -21vw;
+    grid-area: 1/1;
+    z-index: 3;
+}
+
+#AlixLouisXV{
+    left : -22.5vw;
+    grid-area: 1/2;
+    z-index: 2;
+}
+
+#TeddyCartouche{
+    left : -22.5vw;
+    grid-area: 1/3;
+    z-index: 1;
+}
+
+#ManonMedicis{
+    left : -22.5vw;
+    grid-area: 1/4;
+    z-index: 0;
+}
+
+.LaGrandeMagie {
+    overflow: hidden;
+    align-items: center;
+    display : grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-content: center;
+    place-items: center;
+}
+
+.LaGrandeMagie img{
+    position: relative;
+    max-height: 60vh;
+    display:flex;
+    transition: right 0.5s ease-out 0s;
+}
+
+#LaGrandeMagie{
+    background-image: url(LaGrandeMagie/PresentationImage/Background.png);
+    background: blur(0.5rem);
+}
+
+#MaloOtto{
+    z-index: 1;
+    width: auto;
+    height: 100%;
+    grid-area: 1/1;
+    grid-row: span 2;
+    right : -10vw;
+}
+
+#FloraEva{
+    z-index: 4;
+    width: auto;
+    height: 150%;
+    grid-area: 2/2;
+    right : -14vw;
+    top : -5.25vh;
+}
+
+#FloraEtienneSpectacle{
+    z-index : 2;
+    width: auto;
+    height: 110%;
+    grid-area: 1/3;
+    right : -10vw;
+    top :3vh;
+}
+
+#AlixInspecteur{
+    z-index: 5;
+    width: auto;
+    height: 150%;
+    grid-area: 2/3;
+    top : -5.25vh;
+    right : -15vw;
+}
+
+#MayaMilitaire{
+    z-index: 6;
+    width: auto;
+    height: 150%;
+    grid-area: 2/4;
+    top : -5vh;
+    right : -12vw;
+}
+
+#EmericMaitreHotel{
+    z-index: 2;
+    width: auto;
+    height: 150%;
+    grid-area: 1/4;
+    top :  8vh;
+    right : -13vw;
+}
+
+#Eva{
+    z-index: 4;
+    width: auto;
+    height: 150%;
+    grid-area: 2/5;
+    top : -3vh;
+    right : -9vw;
+}
+
+#EnkiGuiseppe{
+    z-index: 2;
+    width: auto;
+    height: 150%;
+    grid-area: 1/5;
+    top : 8vh;
+    right : -11vw;
+}
+
+#EtienneCalogero{
+    z-index: 3;
+    width: auto;
+    height: 100%;
+    grid-area: 1/6;
+    grid-row: span 2;
+    right : -8vw;
+}
+
+#ZoeMartha{
+    z-index: 2;
+    width: auto;
+    height: 100%;
+    grid-area: 1/7;
+    grid-row: span 2;
+    right:-10vw;
+}
+
+.LaMegereApprivoise {
+    overflow: hidden;
+    align-items: end;
+    display : grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    place-items: center;
+}
+
+.LaMegereApprivoise img{
+    position: relative;
+    max-height: 60vh;
+    display:flex;
+    transition: right 0.5s ease-out 0s;
+}
+
+#LaMegereApprivoise{
+    background-image: url(LaMegereApprivoise/PresentationImage/Background.png);
+    background: blur(0.5rem);
+}
+
+#FlorianPetruchio {
+    z-index: 1;
+    width: auto;
+    height: 145%;
+    top:5vh;
+    right:8vw;
+    grid-area: 1 / 2 / span 1 / span 1;
+}
+
+#MariageFloraEnki {
+  z-index: 6;
+  width: auto;
+  height: 135%;
+  top:-4vh;
+  right:8vw;
+  grid-area: 2 / 2 / span 1 / span 1;
+}
+
+#MayaKatarina {
+  z-index: 3;
+  width: auto;
+  height: 130%;
+  top : 8vh;
+  right : 5vw;
+  grid-area: 1 / 3 / span 1 / span 1;
+}
+
+#EvaBloque {
+    z-index: 2;
+    width: auto;
+    height: 125%;
+    top: 4vh;
+    right:7vw;
+    grid-area: 1 / 4 / span 1 / span 1;
+}
+
+#ZoeManon {
+    z-index: 7;
+    width: auto;
+    height: 135%;
+    grid-area: 2 / 4 / span 1 / span 1;
+    top:-4vh;
+    right:11vw;
+}
+
+#AndreaDanse {
+    z-index: 4;
+    width: auto;
+    height: 100%;
+    grid-area: 1 / 5 / span 2 / span 1;
+    right:8vw;
+}
+
+#MaloCambio {
+    z-index: 5;
+    width: auto;
+    height: 100%;
+    grid-area: 1 / 1 / span 2 / span 1;
+    right : 14vw;
+}
+
+.FunerailledHiver {
+    overflow: hidden;
+    align-items: end;
+    display : grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
+    place-items: center;
+}
+
+.FunerailledHiver img{
+    position: relative;
+    max-height: 60vh;
+    display:flex;
+    transition: right 0.5s ease-out 0s;
+}
+
+#FunerailledHiver{
+    background-image: url(FunerailleHiver/PresentationImage/Background.png);
+    background: blur(0.5rem);
+}
+
+#SamandriaOeuf{
+    z-index: 2;
+    width: auto;
+    height: 150%;
+    grid-area: 1/2;
+    top : 10vh;
+    right:0vw;
+}
+
+#FamillePleure{
+    z-index: 3;
+    width: auto;
+    height: 100%;
+    grid-area: 2/1;
+    align-self: end;
+    right:-7vw;
+}
+
+#Hymalaya{
+    z-index: 4;
+    width: auto;
+    height: 150%;
+    grid-area: 2/3;
+    align-self: end;
+    right:-3vw;
+}
+
+#Mariage{
+    z-index: 2;
+    width: auto;
+    height: 150%;
+    grid-area: 1/4;
+    top : 10vh;
+    right:0vw;
+}
+
+#MoineHymalaya{
+    z-index: 5;
+    width: auto;
+    height: 150%;
+    grid-area: 1/5;
+    grid-row: span 2;
+    right:-2vw;
+}
+
+#Samandrina{
+    z-index: 2;
+    width: auto;
+    height: 100%;
+    grid-area: 1/6;
+    grid-row: span 2;
+    right:-10vw;
+}

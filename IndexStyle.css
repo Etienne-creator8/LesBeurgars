@@ -1,0 +1,331 @@
+*{
+    overflow-x:auto;
+}
+
+header{
+    padding-top:1%;
+    padding-bottom:1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: transform 0.4s ease-in-out;
+    z-index: 1000;
+}
+
+header.visible {
+    transform: translateY(0);
+}
+
+.introduction{
+    margin-bottom:2.5%;
+}
+
+.introduction h1 {
+    text-align: center;
+    color : white;
+    font-size : 3.5vw ;
+    margin-left:30%;
+    margin-right:30%;
+    margin-top : 15vh;
+    margin-bottom : 15vh;
+}
+
+.activite {
+    padding-top:2.5%;
+    padding-bottom:2.5%;
+    width : 100%;
+    margin: auto;
+}
+
+.activite div{
+    display : flex;
+    flex-direction : row;
+    align-items: space-between;
+	gap : 5%;
+    width : 75%;
+    margin: auto;
+}
+
+.activite div img {
+    height : auto;
+    width : 35vw;
+}
+
+.activite div div{
+    flex: 1;
+    display : flex;
+    flex-direction : column ;
+    justify-content: space-around;
+    gap:5vh;
+}
+
+#myLastVideo {
+    flex: 1;
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+    position: static; 
+}
+
+.activite div div h2 {
+    color:white;
+    font-size : 2vw;
+    font-weight:bold;
+    text-align: center;
+}
+
+.activite div div p {
+    font-size : 1.3vw;
+    text-align: center;
+}
+
+.activite div div a {
+    font-size : 1.5vw;
+    text-align: center;
+    width:fit-content;
+    padding: 0.5em;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius : 0.5em;
+    border-style : solid;
+    border-color : black;
+    border-width: 0.125em ;
+}
+
+.info div p {
+    font-size : 1.3vw;
+    text-align: center;
+}
+
+#myVideo {
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.Instagram {
+    border-color: white;
+    color : white;
+    background: #833ab4;
+    background: linear-gradient(
+        to right,
+        #833ab4,#fd1d1d,#fcb045
+    );
+}
+
+.LQR{
+    background: #f8d267;
+}
+
+.LQR div img{
+    width: 25vw ;
+    height: auto;
+    border-radius: 25px;
+}
+
+.BookTop {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.BookTop svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 130px;
+}
+
+.BookBottom {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.BookBottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 130px;
+}
+
+.shape-fill {
+    fill: black;
+}
+
+.NouveauSpectacle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #f0f0f0; /* Couleur de fond pour tester */
+    position: relative;
+    height: 60vh;
+    background: rgb(137, 247, 237); /* Comme sur votre photo */
+    overflow: hidden;
+}
+
+.deco {
+    position: absolute;
+    z-index: 2;
+    transition: 
+            transform 0.5s ease-out, 
+            left 0.5s ease-out, 
+            top 0.5s ease-out, 
+            bottom 0.5s ease-out, 
+            right 0.5s ease-out;
+}
+
+.TopLeftLeaf {
+    top: -10%; 
+    left: 0%; 
+    width: 25%; 
+    transform: rotate(-15deg);
+    z-index:5; 
+}
+
+.TopRightLeaf{ 
+    top: -5%; 
+    right: -5%; 
+    width: 25%; 
+    transform: rotate(-10deg); 
+    z-index:5; 
+}
+
+.BottomLeftLeaf { 
+    bottom: -5%; 
+    left: -5%; 
+    width: 25%; 
+    transform: rotate(-10deg); 
+    z-index:5;
+}
+
+.BottomRightLeaf{ 
+    bottom: -5%; 
+    right: -2%; 
+    width: 20%;
+    transform: rotate(-15deg); 
+    z-index:5; 
+}
+
+.Sign {
+    border-radius: 25px;
+    top: 20%;
+    left: 0%;
+    width: 20%;
+    transform: rotate(-10deg);
+}
+
+.SalamandreTop {
+    top: -17%;
+    right: 0%;
+    width: 40%;
+    transform: rotate(20deg);
+    z-index:3; 
+}
+
+.SalamandreBottom{
+    bottom: -15%;
+    left: 5%;
+    width: 35%;
+    transform: rotate(-0deg);
+    z-index:3; 
+}
+
+.Journal {
+    bottom: -15%;
+    right: -5%;
+    width: 19%;
+    transform: rotate(-15deg);
+    z-index: 1;
+}
+
+.content-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+    width: 50%;
+}
+
+.content-overlay h2 {
+    font-size: 3vw;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.content-overlay p {
+    font-size: 1.5vw;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.SalamanderBottom, .SalamanderTop{
+    background-color:rgb(137, 247, 237) ;
+}
+
+.polaroids {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    padding: 2rem;
+    list-style: none;
+}
+
+.polaroid p{
+    color : black;
+}
+
+.polaroid a img {
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+    display: block;
+}
+
+.polaroids li:nth-child(even) {transform: rotate(3deg); }
+.polaroids li:nth-child(3n) { transform: rotate(-4deg); }
+.polaroids li:nth-child(5n) { transform: rotate(2deg); }
+
+.polaroids li:hover {
+    transform: scale(1.15) rotate(0deg) !important;
+    z-index: 10;
+}
+
+.polaroids li {
+    background: #fff;
+    width: 15vw; 
+    height: auto;
+    padding: 3vh 0.5vw 8vh 0.5vw;
+    transition: all 0.3s ease;
+    list-style: none;
+}
+
+.polaroid a {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border: none !important;
+}
+
+.polaroid a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: none !important;
+}
