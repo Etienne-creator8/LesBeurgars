@@ -46,57 +46,96 @@ footer p, footer a{
     font-size : 1.75rem;
 }
 
-nav{
+.main-header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    margin-left: 2.5%;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #c90000;
 }
 
-nav div{
-    width: 60%;
+.logo-trigger {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: default;
+}
+
+.site-logo {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.main-nav ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 5%
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-nav div a{
-    color : white;
-    font-size : 1.75rem ;
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-nav a img{
-    max-width: 15%;
-    height : auto;
-}
-
+/* Version Téléphone (max-width: 768px) */
 @media screen and (max-width: 768px) {
-    nav {
+    .main-header {
         flex-direction: column;
-        padding: 15px;
-        gap: 15px;
+        position: relative;
+        padding: 1rem;
     }
 
-    nav div {
+    /* Le logo devient cliquable */
+    .logo-trigger {
+        cursor: pointer;
+    }
+
+    /* Le menu se masque par défaut sur mobile */
+    .main-nav {
+        display: none;
         width: 100%;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
+        margin-top: 1rem;
     }
 
-    nav div a {
-        font-size: 1.1rem;
-        padding: 8px 0;
+    .main-nav ul {
+        flex-direction: column;
+        gap: 0;
         text-align: center;
     }
 
-    nav a img {
-        max-width: 70px;
-        height: auto;
+    .main-nav li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
 
+    .main-nav a {
+        display: block;
+        padding: 1rem 0;
+    }
+
+    /* Classe ajoutée en JS pour afficher le menu déroulant */
+    .main-nav.active {
+        display: block;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+}
+
+/* Animation d'ouverture */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
     footer {
         flex-direction: column;
         gap: 1.5rem;

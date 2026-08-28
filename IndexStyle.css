@@ -335,4 +335,8 @@ header.visible {
     .LQR > div {
         flex-direction: column;
     }
+
+    .PolaroidSection{
+        margin-bottom : 5%;
+    }
 }
