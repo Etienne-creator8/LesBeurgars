@@ -83,23 +83,25 @@ nav a img{
         width: 100%;
         flex-direction: column;
         align-items: center;
-        gap: 5%;
+        gap: 12px;
     }
 
     nav div a {
-        font-size: 1.5rem;
-        padding: 2.5%;
+        font-size: 1.1rem;
+        padding: 8px 0;
+        text-align: center;
     }
 
     nav a img {
-        /*max-width: 80px;*/
+        max-width: 70px;
+        height: auto;
     }
 
-    footer{
+    footer {
         flex-direction: column;
         gap: 1.5rem;
     }
-   footer p, footer a {
+    footer p, footer a {
         font-size: 1rem;
     }
 }

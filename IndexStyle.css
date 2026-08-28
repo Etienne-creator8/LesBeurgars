@@ -288,13 +288,6 @@ header.visible {
     color : black;
 }
 
-.polaroid a img {
-    width: 100%;
-    height:auto;
-    object-fit: cover;
-    display: block;
-}
-
 .polaroids li:nth-child(even) {transform: rotate(3deg); }
 .polaroids li:nth-child(3n) { transform: rotate(-4deg); }
 .polaroids li:nth-child(5n) { transform: rotate(2deg); }
@@ -308,7 +301,7 @@ header.visible {
     background: #fff;
     width: 15vw; 
     height: auto;
-    padding: 3vh 0.5vw 8vh 0.5vw;
+    padding: 15px 15px 45px 15px;
     transition: all 0.3s ease;
     list-style: none;
 }
@@ -323,8 +316,15 @@ header.visible {
 
 .polaroid a img {
     width: 100%;
-    height: 100%;
+    height:auto;
     object-fit: cover;
     display: block;
     border: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .polaroids li {
+        width: 30vw; 
+        padding: 10px 10px 30px 10px;
+    }
 }
