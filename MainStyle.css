@@ -9,7 +9,7 @@ body {
 }
 
 p,a {
-    font-size : 1vw;
+    font-size : 1rem;
     color : white;
 }
 
@@ -87,7 +87,7 @@ nav a img{
     }
 
     nav div a {
-        /*font-size: 1rem;*/
+        font-size: 5rem;
         padding: 2.5%;
     }
 

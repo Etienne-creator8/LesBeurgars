@@ -71,18 +71,18 @@ header.visible {
 
 .activite div div h2 {
     color:white;
-    font-size : 2vw;
+    font-size : 2rem;
     font-weight:bold;
     text-align: center;
 }
 
 .activite div div p {
-    font-size : 1.3vw;
+    font-size : 1.3rem;
     text-align: center;
 }
 
 .activite div div a {
-    font-size : 1.5vw;
+    font-size : 1.5rem;
     text-align: center;
     width:fit-content;
     padding: 0.5em;
@@ -138,7 +138,7 @@ header.visible {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 130px;
+    height: 1%;
 }
 
 .BookBottom {
@@ -155,7 +155,7 @@ header.visible {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 130px;
+    height: 1%;
 }
 
 .shape-fill {
