@@ -40,20 +40,10 @@ footer{
     align-items: center;
 }
 
-footer p{
+footer p, footer a{
     text-align : center;
     color : white;
     font-size : 1.75rem;
-}
-
-@media screen and (max-width: 768px) {
-    footer{
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-   footer p {
-        font-size: 1rem;
-    }
 }
 
 nav{
@@ -61,7 +51,7 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 2.5%;
 }
 
 nav div{
@@ -74,10 +64,42 @@ nav div{
 
 nav div a{
     color : white;
-    font-size : 1.75vw ;
+    font-size : 1.75rem ;
 }
 
 nav a img{
     max-width: 15%;
     height : auto;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    nav div {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 5%;
+    }
+
+    nav div a {
+        /*font-size: 1rem;*/
+        padding: 2.5%;
+    }
+
+    nav a img {
+        max-width: 80px;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+   footer p, footer a {
+        font-size: 1rem;
+    }
 }
