@@ -328,11 +328,11 @@ header.visible {
         padding: 10px 10px 30px 10px;
     }
 
-    .LQR div{
-        flex-direction: column;
+    .LastShow > div {
+        flex-direction: column-reverse;
     }
 
-    .LastShow div{
+    .LQR > div {
         flex-direction: column;
     }
 }
