@@ -324,7 +324,15 @@ header.visible {
 
 @media screen and (max-width: 768px) {
     .polaroids li {
-        width: 30vw; 
+        width: 85vw; 
         padding: 10px 10px 30px 10px;
+    }
+
+    .LQR div{
+        flex-direction: column;
+    }
+
+    .LastShow div{
+        flex-direction: column;
     }
 }
