@@ -12,21 +12,18 @@
         <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="main-header">
-            <!-- Le logo devient le déclencheur du menu -->
-            <button class="logo-trigger" id="menuToggle" aria-label="Ouvrir le menu">
-                <img src="logo.png" alt="Logo Beurgars" class="site-logo">
-            </button>
-
-            <nav class="main-nav" id="mainNav">
+        <header>
+            <button class="MenuToggle"></button>
+            <nav class="NavLink">
                 <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">La Troupe</a></li>
-                    <li><a href="#">Nos Créations</a></li>
-                    <li><a href="#">Atelier du Livre qui Rêve</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Troupe/troupe.html">La Troupe</a></li>
+                    <li><a href="Spectale/creation.html">Nos Créations</a></li>
+                    <li><a href="https://atelierdulivrequireve.fr/">Atelier du Livre qui Rêve</a></li>
                 </ul>
             </nav>
         </header>
+
         <section class="introduction">
             <h1>Les Beurgars</h1>
         </section>
@@ -127,24 +124,13 @@
             </div>
         </section>
         <footer>
-            <p>Version 8</p>
+            <p>Version 9</p>
             <p><b>Contactez-nous !</b></p>
-            <p><b>Adresse :</b><br/>3 Rue Alfred Guingeard, 44760 La Bernerie-en-Retz</p>
+            <p><b>Adresse :</b><br/><a href="https://maps.app.goo.gl/Zcdod4VcVNysitBX6" >3 Rue Alfred Guingeard, 44760 La Bernerie-en-Retz</a></p>
             <p><b>Téléphone :</b><br/><a href="tel:0240827038">02 40 82 70 38</a></p>
             <p><b>Email :</b><br/><a href="mailto:livrequireve@gmail.com">livrequireve@gmail.com</a></p>
         </footer>
     </body>
-    <script async src="https://www.instagram.com/embed.js"></script>
     <script type="text/javascript" src="IndexAnimation.js"></script>
-    <script>
-        const menuToggle = document.getElementById('menuToggle');
-        const mainNav = document.getElementById('mainNav');
-
-        menuToggle.addEventListener('click', () => {
-            // Le clic fonctionne uniquement si on est sur mobile (largeur <= 768px)
-            if (window.innerWidth <= 768) {
-                mainNav.classList.toggle('active');
-            }
-        });
-    </script>
+    <script type="text/javascript" src="PhoneNav.js"></script>
 </html>

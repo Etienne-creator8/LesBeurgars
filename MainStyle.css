@@ -46,85 +46,96 @@ footer p, footer a{
     font-size : 1.75rem;
 }
 
-.main-header {
+header{
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: #c90000;
+    align-items: center;
 }
 
-.logo-trigger {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: default;
+.NavLink{
+    margin-right: 2.5%;
 }
 
-.site-logo {
-    height: 50px;
-    width: auto;
-    display: block;
-}
-
-.main-nav ul {
+.NavLink ul{
     display: flex;
-    gap: 2rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 2.5rem;
     list-style: none;
     margin: 0;
     padding: 0;
+    gap: 3.5rem;
 }
 
-.main-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
+.NavLink ul li a{
+    color : white;
+    font-size : 1.85rem ;
+    white-space: nowrap;
 }
 
-/* Version Téléphone (max-width: 768px) */
+.MenuToggle{
+    margin-left: 2.5%;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 120px;
+    aspect-ratio: 1/1;
+    background-image: url('LogoLesBeurgars.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+}
+
 @media screen and (max-width: 768px) {
-    .main-header {
+    header {
         flex-direction: column;
-        position: relative;
+        align-items: center;
         padding: 1rem;
     }
 
-    /* Le logo devient cliquable */
-    .logo-trigger {
-        cursor: pointer;
+    .MenuToggle {
+        margin-left: 0;
+        width: 80px;
     }
 
-    /* Le menu se masque par défaut sur mobile */
-    .main-nav {
+    .NavLink {
         display: none;
         width: 100%;
+        margin-right: 0;
         margin-top: 1rem;
     }
 
-    .main-nav ul {
+    .NavLink ul {
         flex-direction: column;
+        align-items: center;
         gap: 0;
-        text-align: center;
+        width: 100%;
     }
 
-    .main-nav li {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .main-nav a {
+    .NavLink ul li a {
         display: block;
         padding: 1rem 0;
+        font-size: 1.2rem;
+        white-space: normal;
     }
 
-    /* Classe ajoutée en JS pour afficher le menu déroulant */
-    .main-nav.active {
+    .NavLink.active {
         display: block;
-        animation: fadeIn 0.3s ease-in-out;
+        animation: slideDown 0.3s ease-out;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    footer p, footer a {
+        font-size: 1rem;
     }
 }
 
-/* Animation d'ouverture */
-@keyframes fadeIn {
+@keyframes slideDown {
     from {
         opacity: 0;
         transform: translateY(-10px);
@@ -132,15 +143,5 @@ footer p, footer a{
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    footer {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-    footer p, footer a {
-        font-size: 1rem;
     }
 }
