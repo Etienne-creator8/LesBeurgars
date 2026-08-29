@@ -80,6 +80,9 @@ body{
 iframe {
     display: block;
     margin: auto;
+    width: 60%;
+    height: auto;
+    aspect-ratio: 16/9;
 }
 
 .flip-card,.flip-card-image{
@@ -128,5 +131,10 @@ section{
 
     .IntroductionTexte div h2, .Actor h2, .Video h2, .Photo h2 {
         font-size: 1.8rem !important;
+    }
+
+    iframe{
+        width: 100%;
+        height: auto;
     }
 }
