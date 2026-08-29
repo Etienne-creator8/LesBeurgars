@@ -60,7 +60,7 @@
 
 .flip-card-image{
     aspect-ratio: 3 / 4;
-    width: 15vw;
+    width: 100%;
 }
 
 .ActorCard {
@@ -123,10 +123,14 @@
         padding: 0.2rem;
     }
 
-    .introduction h1,
-    .Troupe h2 {
+    .introduction h1{
         width: 50% !important;
         font-size: 2rem !important;
+    }
+
+    .Troupe h2 {
+        width: 50% !important;
+        font-size: 1.5rem !important;
     }
 
     .flip-card-back h1{

@@ -410,10 +410,15 @@
     .ShowInfo img {
         width: 100% !important;
         height: auto !important;
-        object-fit: contain;
+        object-fit: cover;
     }
 
     .ShowImage{
         display: none !important;
+    }
+
+    .introduction h1 {
+        width: 50% !important;
+        font-size: 2rem !important;
     }
 }
