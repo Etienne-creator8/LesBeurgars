@@ -11,9 +11,8 @@
     color : white;
     background-color: rgb(194, 7, 7);
     font-size : 4em ;
-    margin-left:30%;
-    margin-right:30%;
-    margin-top : 5%;
+    margin: 5% auto 0 auto;
+    width: 40%
 }
 
 .introduction p {
@@ -61,7 +60,8 @@
 
 .flip-card-image{
     aspect-ratio: 3 / 4;
-    width: 15vw;
+    /*width: 15vw;*/
+    width: 220px;
 }
 
 .ActorCard {
@@ -77,10 +77,8 @@
     text-align: center;
     color :#d8ab23;
     font-size : 3em ;
-    margin-left:30%;
-    margin-right:30%;
-    margin-top : 1%;
-    margin-bottom : 1%;
+    margin: 1% auto;
+    width: 40%;
 }
 
 .Troupe p{
@@ -94,7 +92,32 @@
 }
 
 @media screen and (max-width: 768px) {
-    .flip-card-image{
-        width: 7vw;
+    .ActorCard {
+        width: 100% !important;
+        padding: 0 0.5rem;
+        gap: 0.5rem !important;
+        justify-content: center;
+    }
+
+    .flip-card {
+        width: calc((100% - 1rem) / 3) !important;
+        max-width: 120px;
+    }
+
+    .flip-card-image {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+    }
+
+    .flip-card-back {
+        font-size: 0.8rem;
+        padding: 0.2rem;
+    }
+
+    .introduction h1,
+    .Troupe h2 {
+        width: 100% !important;
+        font-size: 2rem !important;
     }
 }
