@@ -92,3 +92,9 @@
 .flip-card-back {
     background-color: rgb(194, 7, 7);
 }
+
+@media screen and (max-width: 768px) {
+    .flip-card-image{
+        width: 7vw;
+    }
+}

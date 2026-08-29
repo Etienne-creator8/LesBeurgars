@@ -147,8 +147,9 @@ header.visible {
     left: 0;
     width: 100%;
     overflow: hidden;
-    line-height: 0;
     transform: rotate(180deg);
+    line-height: 0;
+    margin-bottom: -5px;
 }
 
 .BookBottom svg {
@@ -156,6 +157,7 @@ header.visible {
     display: block;
     width: calc(100% + 1.3px);
     height: 1%;
+    transform: scale(1.02);
 }
 
 .shape-fill {
