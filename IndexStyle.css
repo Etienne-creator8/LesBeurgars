@@ -342,11 +342,12 @@ header.visible {
         margin-bottom : 5%;
     }
 
-    .LQR div img, .LastShow div video{
-        width: 75vw ;
+    .LQR div img, 
+    .LastShow div video {
+        display: block;
+        width: 75vw;
         height: auto;
         border-radius: 25px;
-        margin:auto;
+        margin: 0 auto;
     }
-
 }

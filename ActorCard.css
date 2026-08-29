@@ -47,11 +47,3 @@
     overflow: visible;
     perspective: 1000px;
 }
-
-.flip-card-back h1{
-    font-size: 3em;
-}
-
-.flip-card-back p{
-    font-size: 1.5em;
-}
