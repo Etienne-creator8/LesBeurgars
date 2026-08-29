@@ -11,8 +11,8 @@
     color : white;
     background-color: rgb(194, 7, 7);
     font-size : 4rem ;
-    margin-left:30%;
-    margin-right:30%;
+    width: 50%;
+    margin: 5% auto 0 auto;
     margin-top : 5%;
 }
 
@@ -418,7 +418,11 @@
     }
 
     .introduction h1 {
-        width: 50% !important;
+        width: 90% !important;
+        max-width: 400px;
+        margin-left: auto !important;
+        margin-right: auto !important;
         font-size: 2rem !important;
+        text-align: center;
     }
 }
