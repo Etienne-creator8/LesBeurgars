@@ -390,6 +390,29 @@
 }
 
 @media screen and (max-width: 768px) {
+    .creation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .ShowInfo {
+        width: 80% !important;
+        max-width: 300px;
+        height: auto !important;
+        margin: 0 auto !important;
+        order: initial !important;
+    }
+
+    .ShowInfo img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain;
+    }
+
     .ShowImage{
         display: none !important;
     }
