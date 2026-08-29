@@ -341,4 +341,12 @@ header.visible {
     .PolaroidSection{
         margin-bottom : 5%;
     }
+
+    .LQR div img, .LastShow div video{
+        width: 75vw ;
+        height: auto;
+        border-radius: 25px;
+        margin:auto;
+    }
+
 }
