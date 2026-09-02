@@ -169,10 +169,10 @@ header.visible {
     display: flex;
     justify-content: center;
     padding: 50px 0;
-    background-color: #f0f0f0; /* Couleur de fond pour tester */
+    background-color: #f0f0f0;
     position: relative;
     height: 60vh;
-    background: rgb(137, 247, 237); /* Comme sur votre photo */
+    background: rgb(137, 247, 237);
     overflow: hidden;
 }
 
@@ -325,6 +325,10 @@ header.visible {
 }
 
 @media screen and (max-width: 768px) {
+    #myVideo{
+        width: 100%;
+    }
+
     .polaroids li {
         width: 85vw; 
         padding: 10px 10px 30px 10px;
@@ -349,5 +353,9 @@ header.visible {
         height: auto;
         border-radius: 25px;
         margin: 0 auto;
+    }
+
+    #myLastVideo {
+        width: 75%;
     }
 }
