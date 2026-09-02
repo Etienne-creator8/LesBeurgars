@@ -378,11 +378,12 @@ header.visible {
         height: auto !important;
         min-height: 30vh;
         padding: 3rem 1rem !important;
+        width: 100vw;
+        overflow-x: hidden;
     }
 
     .deco {
         display: none !important;
-        overflow-x: hidden;
         width: 30% !important;
     }
 
@@ -400,8 +401,9 @@ header.visible {
 
     .SalamandreBottom{
         display: block !important;
+        width: 80% !important;
         bottom:10%; 
-        left:5%; 
+        left:0%; 
     }
 
     .content-overlay {
