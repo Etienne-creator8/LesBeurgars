@@ -325,11 +325,7 @@ header.visible {
 }
 
 @media screen and (max-width: 768px) {
-    .LastShow > div {
-        flex-direction: column-reverse;
-    }
-
-    .LQR > div {
+    .LastShow > div, .LQR > div {
         flex-direction: column;
     }
 
@@ -386,6 +382,27 @@ header.visible {
 
     .deco {
         display: none !important;
+    }
+
+    .TopRightLeaf{
+        display: block !important;
+        top: 0%; 
+        right: 0%; 
+        width: 30% !important;
+    }
+
+    .BottomLeftLeaf{
+        display: block !important;
+        width: 30% !important;
+        bottom:0%; 
+        left:0%; 
+    }
+
+    .SalamandreBottom{
+        display: block !important;
+        width: 30% !important;
+        bottom:10%; 
+        left:5%; 
     }
 
     .content-overlay {
