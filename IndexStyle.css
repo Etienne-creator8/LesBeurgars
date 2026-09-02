@@ -326,7 +326,7 @@ header.visible {
 
 @media screen and (max-width: 768px) {
     #myVideo{
-        width: 100%;
+        width: 90%;
     }
 
     .polaroids li {
