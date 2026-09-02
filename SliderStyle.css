@@ -82,3 +82,9 @@ img{
   opacity: 1;
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 768px) {
+  .Image {
+    width: 12vw;
+  }
+}
