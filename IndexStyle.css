@@ -325,15 +325,6 @@ header.visible {
 }
 
 @media screen and (max-width: 768px) {
-    #myVideo{
-        width: 90%;
-    }
-
-    .polaroids li {
-        width: 85vw; 
-        padding: 10px 10px 30px 10px;
-    }
-
     .LastShow > div {
         flex-direction: column-reverse;
     }
@@ -346,16 +337,67 @@ header.visible {
         margin-bottom : 5%;
     }
 
+    .polaroids {
+        gap: 2rem !important;
+        padding: 1rem !important;
+    }
+
+    .polaroids li {
+        width: 80vw !important;
+        padding: 10px 10px 30px 10px !important;
+    }
+
+    #myLastVideo {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    #myVideo {
+        width: 90% !important;
+    }
+
+    .introduction h1 {
+        width: 90% !important;
+        font-size: 2rem !important;
+        margin: 5vh auto !important;
+    }
+
+
+    .activite div {
+        flex-direction: column !important;
+        width: 90% !important;
+        gap: 2rem !important;
+    }
+
     .LQR div img, 
     .LastShow div video {
         display: block;
-        width: 75vw;
+        width: 85vw !important;
         height: auto;
         border-radius: 25px;
         margin: 0 auto;
     }
 
-    #myLastVideo {
-        width: 100%;
+    .NouveauSpectacle {
+        height: auto !important;
+        min-height: 30vh;
+        padding: 3rem 1rem !important;
+    }
+
+    .deco {
+        display: none !important;
+    }
+
+    .content-overlay {
+        width: 90% !important;
+        margin: 0 auto;
+    }
+
+    .content-overlay h2 {
+        font-size: 1.8rem !important;
+    }
+
+    .content-overlay p {
+        font-size: 1rem !important;
     }
 }
