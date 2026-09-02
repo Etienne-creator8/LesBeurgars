@@ -100,15 +100,20 @@
 }
 
 @media screen and (max-width: 768px) {
+    html, body {
+        overflow-x: hidden !important;
+    }
+
     .ActorCard {
         width: 100% !important;
-        padding: 0 0.5rem;
-        gap: calc(15% / 3)  !important;
+        max-width: 100vw;
+        padding: 0 0.25rem !important;
+        gap: 0.5rem !important;
         justify-content: center;
     }
 
     .flip-card {
-        width: calc(85% / 3) !important;
+        width: calc((100% - 1.5rem) / 3) !important;
         max-width: 120px;
     }
 
@@ -121,6 +126,7 @@
     .flip-card-back {
         font-size: 0.8rem;
         padding: 0.2rem;
+        box-sizing: border-box;
     }
 
     .introduction h1{
