@@ -103,12 +103,12 @@
     .ActorCard {
         width: 100% !important;
         padding: 0 0.5rem;
-        gap: 1.5rem !important;
+        gap: calc(15% / 3)  !important;
         justify-content: center;
     }
 
     .flip-card {
-        width: calc((100% - 6rem) / 3) !important;
+        width: calc(85% / 3) !important;
         max-width: 120px;
     }
 
