@@ -384,7 +384,7 @@ header.visible {
 
     .deco {
         display: none !important;
-        width: 30% !important;
+        width: 30%;
     }
 
     .TopRightLeaf{

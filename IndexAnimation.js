@@ -1,25 +1,29 @@
 function HoverInSalamandre() {
-    document.querySelector(".Sign").style.left = "12%"
-    document.querySelector(".SalamandreTop").style.top = "-13%"
-    document.querySelector(".SalamandreTop").style.right = "10%"
-    document.querySelector(".SalamandreTop").style.transform = 'rotate(' + 10 + 'deg)';
-    document.querySelector(".SalamandreBottom").style.bottom = "-10%"
-    document.querySelector(".SalamandreBottom").style.left = "15%"
-    document.querySelector(".SalamandreBottom").style.transform = 'rotate(' + -10 + 'deg)';
-    document.querySelector(".Journal").style.bottom = "-10%"
-    document.querySelector(".Journal").style.right = "5%"
+    if (window.innerWidth > 768) {
+        document.querySelector(".Sign").style.left = "12%"
+        document.querySelector(".SalamandreTop").style.top = "-13%"
+        document.querySelector(".SalamandreTop").style.right = "10%"
+        document.querySelector(".SalamandreTop").style.transform = 'rotate(' + 10 + 'deg)';
+        document.querySelector(".SalamandreBottom").style.bottom = "-10%"
+        document.querySelector(".SalamandreBottom").style.left = "15%"
+        document.querySelector(".SalamandreBottom").style.transform = 'rotate(' + -10 + 'deg)';
+        document.querySelector(".Journal").style.bottom = "-10%"
+        document.querySelector(".Journal").style.right = "5%"
+    }
  }
 
 function HoverOutSalamandre() {
-    document.querySelector(".Sign").style.left = "0%"
-    document.querySelector(".SalamandreTop").style.top = "-17%"
-    document.querySelector(".SalamandreTop").style.right = "0%"
-    document.querySelector(".SalamandreTop").style.transform = 'rotate(' + 20 + 'deg)';
-    document.querySelector(".SalamandreBottom").style.bottom = "-15%"
-    document.querySelector(".SalamandreBottom").style.left = "5%"
-    document.querySelector(".SalamandreBottom").style.transform = 'rotate(' + 0 + 'deg)';
-    document.querySelector(".Journal").style.bottom = "-15%"
-    document.querySelector(".Journal").style.right = "-5%"
+    if (window.innerWidth > 768) {
+        document.querySelector(".Sign").style.left = "0%"
+        document.querySelector(".SalamandreTop").style.top = "-17%"
+        document.querySelector(".SalamandreTop").style.right = "0%"
+        document.querySelector(".SalamandreTop").style.transform = 'rotate(' + 20 + 'deg)';
+        document.querySelector(".SalamandreBottom").style.bottom = "-15%"
+        document.querySelector(".SalamandreBottom").style.left = "5%"
+        document.querySelector(".SalamandreBottom").style.transform = 'rotate(' + 0 + 'deg)';
+        document.querySelector(".Journal").style.bottom = "-15%"
+        document.querySelector(".Journal").style.right = "-5%"
+    }
  }
 
 document.querySelector(".NouveauSpectacle").addEventListener("mouseover", HoverInSalamandre,false);
