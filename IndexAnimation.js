@@ -29,6 +29,8 @@ function HoverOutSalamandre() {
 document.querySelector(".NouveauSpectacle").addEventListener("mouseover", HoverInSalamandre,false);
 document.querySelector(".NouveauSpectacle").addEventListener("mouseout", HoverOutSalamandre,false);
 
+var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('header');
     
@@ -38,10 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.classList.add('visible');
-        } else {
-            header.classList.remove('visible');
+        if (width >= 768) {
+            if (window.scrollY > 50) {
+                header.classList.add('visible');
+            } else {
+                header.classList.remove('visible');
+            }
         }
     });
 });
