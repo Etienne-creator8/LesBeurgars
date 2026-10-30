@@ -88,34 +88,30 @@ header{
     flex-shrink: 0;
 }
 
-.menu-hint-container {
+.ArrowContainer {
     display: contents; 
 }
 
-.mobile-hint, .hint-arrow {
+.Arrow {
     display: none;
 }
 
 @media screen and (max-width: 768px) {
-    .menu-hint-container {
+    .ArrowContainer {
         display: flex;
         align-items: center;
-        gap: 6px;
+        justify-content: center;
+        gap: 12px;
+        margin: 0 auto;
     }
 
-    .hint-arrow {
-        display: inline-block;
-        font-size: 1rem;
-        color: white;
+    .Arrow {
+        font-size: 1.2rem;
+        color: #ffffff;
+        font-weight: bold;
+        user-select: none;
+        animation: bounceArrows 1s infinite alternate ease-in-out;
     }
-
-    .hint-arrow.left {
-        animation: pointLeft 1s infinite alternate;
-    } 
-
-    .hint-arrow.right {
-        animation: pointRight 1s infinite alternate;
-    } 
 
     header {
         flex-direction: column;
@@ -175,20 +171,13 @@ header{
     }
 }
 
-@keyframes pointLeft {
+@keyframes bounceArrows {
     0% {
         transform: translateX(0);
+        opacity: 0.5;
     }
     100% {
-        transform: translateX(-4px);
-    }
-}
-
-@keyframes pointRight {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(4px);
+        transform: translateX(3px); /* Effet de léger déplacement vers le logo */
+        opacity: 1;
     }
 }
