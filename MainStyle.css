@@ -88,7 +88,37 @@ header{
     flex-shrink: 0;
 }
 
+.menu-hint-container {
+    display: contents; 
+}
+
+.mobile-hint, .hint-arrow {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
+    .menu-hint-container {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .mobile-hint {
+        display: inline-block;
+        font-size: 0.85rem;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .hint-arrow {
+        display: inline-block;
+        font-size: 1rem;
+        color: white;
+        animation: pointLeft 1s infinite alternate;
+    }
+
     header {
         flex-direction: column;
         align-items: center;
@@ -144,5 +174,14 @@ header{
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes pointLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-4px);
     }
 }
