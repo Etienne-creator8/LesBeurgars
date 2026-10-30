@@ -41,6 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', () => {
         if (width >= 768) {
+            header.classList.add('visible');
+        } else {
             if (window.scrollY > 50) {
                 header.classList.add('visible');
             } else {

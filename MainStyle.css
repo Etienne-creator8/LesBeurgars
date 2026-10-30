@@ -103,21 +103,19 @@ header{
         gap: 6px;
     }
 
-    .mobile-hint {
-        display: inline-block;
-        font-size: 0.85rem;
-        color: white;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-
     .hint-arrow {
         display: inline-block;
         font-size: 1rem;
         color: white;
-        animation: pointLeft 1s infinite alternate;
     }
+
+    .hint-arrow.left {
+        animation: pointLeft 1s infinite alternate;
+    } 
+
+    .hint-arrow.right {
+        animation: pointRight 1s infinite alternate;
+    } 
 
     header {
         flex-direction: column;
@@ -183,5 +181,14 @@ header{
     }
     100% {
         transform: translateX(-4px);
+    }
+}
+
+@keyframes pointRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(4px);
     }
 }
