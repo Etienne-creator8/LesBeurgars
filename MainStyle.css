@@ -101,12 +101,13 @@ header{
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 12px;
+        gap: 15px;
         margin: 0 auto;
     }
 
     .Arrow {
-        font-size: 1.2rem;
+        display: inline-block;
+        font-size: 1.5rem;
         color: #ffffff;
         font-weight: bold;
         user-select: none;

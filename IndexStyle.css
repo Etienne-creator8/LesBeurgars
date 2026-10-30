@@ -328,6 +328,14 @@ header.visible {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        transform: translateY(0) !important;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0.5rem;
+    }
+
     .LastShow > div, .LQR > div {
         flex-direction: column;
     }

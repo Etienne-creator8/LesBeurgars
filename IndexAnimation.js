@@ -34,13 +34,12 @@ var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('header');
     
-    if (!header) {
-        console.error("Erreur : L'élément <header> n'a pas été trouvé dans la page.");
-        return;
-    }
+    if (!header) return;
 
     window.addEventListener('scroll', () => {
-        if (width >= 768) {
+        const currentWidth = window.innerWidth > 0 ? window.innerWidth : screen.width;
+
+        if (currentWidth >= 768) {
             if (window.scrollY > 50) {
                 header.classList.add('visible');
             } else {
