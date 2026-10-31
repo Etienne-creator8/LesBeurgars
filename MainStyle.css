@@ -97,21 +97,28 @@ header{
 }
 
 @media screen and (max-width: 768px) {
-    .ArrowContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        margin: 0 auto;
-    }
-
     .Arrow {
         display: inline-block;
         font-size: 1.5rem;
         color: #ffffff;
         font-weight: bold;
         user-select: none;
-        animation: bounceArrows 1s infinite alternate ease-in-out;
+    }
+    .arrow-left {
+        animation: bounceLeft 1s infinite alternate ease-in-out;
+    }
+
+    .arrow-right {
+        transform: rotate(180deg);
+        animation: bounceRight 1s infinite alternate ease-in-out;
+    }
+
+    .ArrowContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin: 0 auto;
     }
 
     header {
@@ -172,13 +179,25 @@ header{
     }
 }
 
-@keyframes bounceArrows {
+
+@keyframes bounceLeft {
     0% {
         transform: translateX(0);
-        opacity: 0.5;
+        opacity: 0.4;
     }
     100% {
-        transform: translateX(3px); /* Effet de léger déplacement vers le logo */
+        transform: translateX(4px);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceRight {
+    0% {
+        transform: rotate(180deg) translateX(0);
+        opacity: 0.4;
+    }
+    100% {
+        transform: rotate(180deg) translateX(4px);
         opacity: 1;
     }
 }
